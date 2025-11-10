@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// q . Buy and sell stock
+// q1.1 Buy and sell stock
 // dynamic programming q this is
 // imagine u have an array : {1,7,4,5,6,3}
 // these elements are the prices of the sotckes on each day
@@ -14,7 +14,7 @@ using namespace std;
 // #1 u cannot sell before u buy (obvvvv gurl)
 // #2 buying and selling can only be done once
 
-int buyAndSellStocksB(vector<int> &a)
+int buyAndSellStocks1B(vector<int> &a)
 {
     int n = a.size();
     int p = 0;
@@ -39,7 +39,7 @@ int buyAndSellStocksB(vector<int> &a)
     // Space: O(1)
 }
 
-int buyAndSellStocksO(vector<int> &a)
+int buyAndSellStocks1O(vector<int> &a)
 
 {
     int n = a.size();
@@ -55,6 +55,26 @@ int buyAndSellStocksO(vector<int> &a)
     }
 
     return maxProfit;
+}
+
+// q1.2
+// same q but here u r allowed to buy and sell stocks as many times as u want
+// whihc means if array is: {7 1 5 3 6 4}
+// u have to collect maxprofit of it
+// but rule one more added
+// you buy buy buy and then sel sell sell
+// u hvtohbuy sell buy sell and like that
+
+int buyAndSellStocks2B(vector<int> &a)
+{
+    n = a.size();
+
+    for (int i = 0; i < n; i++)
+    {
+        if (a[i] > a[i + 1])
+        {
+        }
+    }
 }
 
 int main()
