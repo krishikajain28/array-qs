@@ -11,6 +11,7 @@ int nextPermutationB(vector<int> &a) // Changed int& to vector<int>&
 // Better Approach Placeholder
 int nextPermutationBe(vector<int> &a) // Changed int& to vector<int>&
 {
+    // cpp stl
     int n = a.size();
     return n;
 }
@@ -54,7 +55,7 @@ int nextPermutationO(int k)
 
     // 4. Reverse the right half
     reverse(a.begin() + ind + 1, a.end());
-
+ff
     // 5. Convert vector back to int
     int ans = 0;
     for (int i : a)
